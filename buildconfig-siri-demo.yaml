@@ -1,0 +1,52 @@
+﻿kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: siri-demo
+  namespace: siri-demo
+  selfLink: /apis/build.openshift.io/v1/namespaces/siri-demo/buildconfigs/siri-demo
+  uid: ecd592a0-0b96-11ea-ae81-0a580a8100f8
+  resourceVersion: '17727869'
+  creationTimestamp: '2019-11-20T13:09:03Z'
+  labels:
+    app: siri-demo
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'siri-demo:latest'
+  resources:
+    limits:
+      cpu: '1'
+      memory: 1Gi
+    requests:
+      cpu: '1'
+      memory: 1Gi
+  successfulBuildsHistoryLimit: 5
+  failedBuildsHistoryLimit: 5
+  strategy:
+    type: Source
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        namespace: openshift
+        name: 'java:11'
+      env:
+        - name: JAVA_OPTS
+          value: '-Xms512m -Xmx640m -Duser.timezone=Europe/Paris'
+        - name: DAY_OF_WEEK
+          value: '7'
+  postCommit: {}
+  source:
+    type: Git
+    git:
+      uri: 'https://github.com/dsuru1499/siri-demo.git'
+  triggers:
+    - type: ImageChange
+      imageChange:
+        lastTriggeredImageID: >-
+          image-registry.openshift-image-registry.svc:5000/openshift/java@sha256:0978bb6d46f54d0d7a4cba24d12fdb48267171a1acbdc017d60f0987da117b89
+    - type: ConfigChange
+  runPolicy: Serial
+status:
+  lastVersion: 6
