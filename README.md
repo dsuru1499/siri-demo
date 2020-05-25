@@ -25,19 +25,19 @@ http://localhost:8080/siri-lite-react/index.html
 Demo OpenShift (Redhat Kubernetes) 
 
 ### Siri Cli (version Reactjs)
-http://http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-react/index.html
+http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-react/index.html
 
 ### Siri Cli (version Angular)
-http://http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-cli/index.html
+http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-cli/index.html
 
 ### Siri Lite Cli (version Angular)
-http://http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-lite-cli/index.html
+http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-lite-cli/index.html
 
 ### Siri Lite Cli (version Vuejs)
-http://http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-lite-vue/index.html
+http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-lite-vue/index.html
 
 ### Siri Lite Cli (version Reactjs)
-http://http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-lite-react/index.html
+http://siri-demo-siri-demo.apps.us-east-2.starter.openshift-online.com/siri-lite-react/index.html
 
 ### Fonctionnalitées
 
